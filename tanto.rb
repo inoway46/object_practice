@@ -1,4 +1,6 @@
-require_relative './shain.rb'
+# frozen_string_literal: true
+
+require_relative './shain'
 
 class Tanto < Shain
   def standup

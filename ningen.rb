@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Ningen
   def initialize(shimei, shincho)
     @shimei = shimei
