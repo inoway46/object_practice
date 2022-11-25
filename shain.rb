@@ -11,7 +11,7 @@ class Shain < Ningen
   end
 
   def standup
-    puts '社員が起立しました'
+    '社員が起立しました'
   end
 
   def answer_salary
