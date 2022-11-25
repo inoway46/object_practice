@@ -5,9 +5,9 @@ require_relative './ningen'
 class Shain < Ningen
   BASIC_SALARY = 100
 
-  def initialize(shimei, shincho)
-    super
-    @salary = calc_salary
+  def initialize(shimei, shincho, kihonkyu = BASIC_SALARY)
+    super(shimei, shincho)
+    @salary = calculate_salary(kihonkyu)
   end
 
   def standup
@@ -20,7 +20,7 @@ class Shain < Ningen
 
   private
 
-  def calc_salary
-    BASIC_SALARY
+  def calculate_salary(kihonkyu)
+    kihonkyu
   end
 end

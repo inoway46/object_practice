@@ -9,7 +9,7 @@ class Bucho < Shain
 
   private
 
-  def calc_salary
-    BASIC_SALARY * 3
+  def calculate_salary(kihonkyu)
+    kihonkyu * 3
   end
 end
