@@ -7,9 +7,7 @@ class Bucho < Shain
     puts '部長が起立しました'
   end
 
-  private
-
-  def calc_salary
-    BASIC_SALARY * 3
+  def calculate_salary(kihonkyu)
+    kihonkyu * 3
   end
 end

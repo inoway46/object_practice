@@ -5,9 +5,9 @@ require_relative './ningen'
 class Shain < Ningen
   BASIC_SALARY = 100
 
-  def initialize(shimei, shincho)
-    super
-    @salary = calc_salary
+  def initialize(shimei='test', shincho=170, kihonkyu = BASIC_SALARY)
+    super(shimei, shincho)
+    @salary = calculate_salary(kihonkyu)
   end
 
   def standup
@@ -18,9 +18,7 @@ class Shain < Ningen
     puts "私の給料は#{@salary}円です"
   end
 
-  private
-
-  def calc_salary
-    BASIC_SALARY
+  def calculate_salary(kihonkyu)
+    kihonkyu
   end
 end
