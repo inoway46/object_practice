@@ -18,8 +18,6 @@ class Shain < Ningen
     puts "私の給料は#{@salary}円です"
   end
 
-  private
-
   def calculate_salary(kihonkyu)
     kihonkyu
   end

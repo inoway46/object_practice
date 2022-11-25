@@ -7,8 +7,6 @@ class Shunin < Shain
     puts '主任が起立しました'
   end
 
-  private
-
   def calculate_salary(kihonkyu)
     (kihonkyu * 2) + 1
   end
