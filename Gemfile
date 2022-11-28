@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
+gem "rake"
+gem "rspec"
 gem "rubocop-performance"
 gem "rubocop-rubycw"
-gem "rspec"
-gem "rake"
