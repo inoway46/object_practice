@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'salary'
+require_relative 'gyoumu'
 
 class Shain
   attr_accessor :gyoumu
