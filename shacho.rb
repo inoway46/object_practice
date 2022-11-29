@@ -1,16 +1,11 @@
 # frozen_string_literal: true
 
-require_relative 'tanto'
-require_relative 'shunin'
-require_relative 'bucho'
-require_relative 'torishimariyaku'
+require_relative 'shain_factory'
 
-tanto = Tanto.new('担当者')
-shunin = Shunin.new('主任')
-bucho = Bucho.new('部長')
-torishimariyaku = Torishimariyaku.new('取締役')
+shain_factory = ShainFactory.new
 
-[tanto, shunin, bucho, torishimariyaku].each do |shain|
+ShainFactory::POSITIONS.each_key do |position|
+  shain = shain_factory.create(position)
   puts shain.standup
   shain.answer_salary
 end
