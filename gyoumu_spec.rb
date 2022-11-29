@@ -1,4 +1,4 @@
-require_relative 'gyomu'
+require_relative 'gyoumu'
 
 describe Gyoumu do
   let(:gyoumu) { Gyoumu.new }
